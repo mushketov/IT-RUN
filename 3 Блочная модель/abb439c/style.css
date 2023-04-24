@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    padding: 20px 34px 20px;
+    border: black dashed 4px;
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+    width: 125px;
+    height: 125px;
+}
+
+b{
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.section{
+    width: 892px;
+}

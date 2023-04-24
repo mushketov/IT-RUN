@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    margin: 5px;
+    border: black dashed 4px;
+    padding: 15px 30px;
+}
+
+.box-image {
+    width: 132px;
+    height: 132px;
+    background: black url('image/ac-cars-logo.png') center/cover no-repeat;
+}
+
+span{
+    font-size: 11px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.conteiner {
+    background-color: aqua;
+    width: 855px;
+}
