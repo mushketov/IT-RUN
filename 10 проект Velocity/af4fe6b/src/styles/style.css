@@ -3,26 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }
-
 .container{
     max-width: 940px;
     margin: 0 auto;
 }
-
 .header{
     background: #FFFFFF;
 }
-
 .header-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 11px 0 24px;
 }
-
 .header-logo{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -35,9 +31,7 @@
     display: flex;
     column-gap: 40px;
 }
-
 .header-link{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -47,7 +41,6 @@
     transition: .8s;
 }
 .header-link:hover{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -60,12 +53,9 @@
     text-align: center;
 }
 .home-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 59px;
-    line-height: 60px;
-    text-align: center;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -76,7 +66,6 @@
     border-radius: 4px;
     padding: 11px 30px 13px;
     border: none;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -92,7 +81,6 @@
     border-radius: 4px;
     padding: 10px 31px 12px;
     background: transparent;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -102,25 +90,26 @@
     color: #FFFFFF;
     cursor: pointer;
 }
-
+.what{
+    padding: 77px 0 80px;
+    text-align: center;
+    background: #FFFFFF;
+}
 .what-content{
     text-align: center;
     padding: 77px 0 80px;
     background: #FFFFFF;
 }
 .what-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 5px;
-    margin-bottom: 17px;
     text-transform: uppercase;
     color: #676770;
 }
 .what-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -128,7 +117,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #8E8E9C;
-    margin-bottom: 62px;
+    padding: 17px 0 62px;
 }
 .what-row{
     display: flex;
@@ -138,9 +127,9 @@
     background: #FFFFFF;
     border: 1px solid #DCEBF7;
     border-radius: 5px;
+    padding: 36px 16px 23px;
 }
 .what-block-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -148,9 +137,9 @@
     letter-spacing: 7px;
     text-transform: uppercase;
     color: #676770;
+    margin: 19px 0 14px;
 }
 .what-block-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -164,9 +153,9 @@
 }
 .services-content{
     text-align: center;
+    padding: 0 15px 0;
 }
 .services-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -174,10 +163,8 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 17px;
 }
 .services-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -185,27 +172,17 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #E8E8E8;
-    margin-bottom: 77px;
+    margin: 17px 0 77px;
+    padding: 0 15px;
 }
-.service-row{
+.services-row{
     display: flex;
     column-gap: 50px;
 }
 .services-card{
-    width: calc(50%);
-}
-.service-img{
-    height: 287px;
-    background: black url('../image/services1.png') center/cover no-repeat;
-    margin-bottom: 20px;
-}
-.service-img-2{
-    height: 287px;
-    background: black url('../image/services2.png') center/cover no-repeat;
-    margin-bottom: 20px;
+    width: calc(50% - 25px);
 }
 .services-card-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -216,20 +193,19 @@
     margin-bottom: 23px;
 }
 .services-card-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
     color: #FFFFFF;
     margin-bottom: 17px;
+    padding: 0 15px;
 }
 .services-card-btn{
     padding: 10px 31px 12px;
     background: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -245,7 +221,6 @@
     text-align: center;
 }
 .tabs-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -256,7 +231,6 @@
     margin-bottom: 17px;
 }
 .tabs-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -266,12 +240,16 @@
     color: #8E8E9C;
     margin-bottom: 73px;
 }
+.tabs-buttons-menu{
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
 .tabs-btn{
-    background: #2E80B6;
+    background: #92A0AD;
     border-radius: 4px;
     border: none;
     padding: 1px 30px;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -282,41 +260,37 @@
     cursor: pointer;
     margin-bottom: 52px;
 }
-.tabs-image{
-    background: black url('../image/tabsimg.png') center/cover no-repeat;
-    height: 627px;
-    margin-bottom: 16px;
+.tabs-btn.blue{
+    background: #2E80B6;
 }
 .tabs-sub-title{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 31px;
     line-height: 36px;
     color: #676770;
-    margin-bottom: 14px;
+    margin: 16px 0 14px;
 }
 .tabs-sub-text{
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 25px;
     color: #6A859C;
 }
-.about{
-    background: #FFFFFF;
-    padding: 33px 0 40px;
+.footer-links{
+    padding: 34px 0 35px;
 }
-.about-content{
+.footer-links-content{
     display: flex;
-    column-gap: 21px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.about-block{
-    width: calc(33.33333%);
+.footer-card{
+    width: 33.333%;
+    padding: 5px 10px;
 }
-.about-block-title{
-    font-family: 'Open Sans';
+.footer-card-title{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -326,64 +300,40 @@
     color: #676770;
     margin-bottom: 25px;
 }
-.about-block-text{
-    font-family: 'Open Sans';
+.footer-card-text{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
     color: #6A859C;
+    padding-top: 4px;
 }
-.about-links-title{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #676770;
-    margin-bottom: 21px;
+.footer-card-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    list-style-type: none;
 }
-.about-link{
-    display: block;
-    font-family: 'Open Sans';
+.footer-card-list-link{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D5D5E0;
+}
+.footer-card-list-link > a{
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     color: #668CAD;
-    padding-bottom: 11px;
-    margin-bottom: 3px;
-    border-bottom: 1px solid #D5D5E0;
-    text-decoration: none;
 }
-.about-social-row{
-    border-bottom: 1px solid #D5D5E0;
-    padding: 6px 0 6px;
+.footer-sub{
+    background: #383838;
+    text-align: center;
+    padding: 40px 0;
 }
-.about-social-title{
-    font-family: 'Open Sans';
+.footer-sub-text{
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #676770;
-    margin-bottom: 21px;
-}
-.about-social-img{
-    width: 19px;
-    height: 15px;
-    margin-right: 10px;
-}
-.about-social-link{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    color: #668CAD;
-    text-decoration: none;
+    color: #9E9E9E;
 }
