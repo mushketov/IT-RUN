@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+.container{
+    max-width: 1246px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    z-index: 3;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+}
+.header-links{
+    display: flex;
+    column-gap: 56px;
+}
+.header-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #275553;
+}
+.header-btn{
+    padding: 11px 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+.dream{
+    background: url("../image/dream-bg.png") center / cover no-repeat;
+    padding: 163px 0 48px;
+    position: relative;
+}
+.dream-title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+.dream-date{
+    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%), #F47648;
+    border-radius: 16px;
+    padding: 3px;
+    width: 481px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 25px 0 40px;
+}
+.dream-desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.dream-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin: 38px 0 171px;
+    display: inline-block;
+}
+.dream-slide{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+.dream-card{
+    width: 270px;
+    position: relative;
+}
+.dream-img{
+    width: 100%;
+}
+.dream-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
