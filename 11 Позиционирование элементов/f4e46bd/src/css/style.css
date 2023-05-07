@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto, sans-serif;
+    list-style-type: none;
 }
 .container{
     max-width: 1246px;
@@ -97,6 +98,7 @@
     position: relative;
 }
 .dream-img{
+    max-width: 100%;
     width: 100%;
 }
 .dream-text{
@@ -108,4 +110,122 @@
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+.begin{
+    padding: 110px 0 147px;
+    position: relative;
+}
+.begin::before{
+    content: '';
+    width: 100%;
+    background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+    position: absolute;
+    height: 354px;
+    top: 525px;
+    left: 0;
+    z-index: -1;
+}
+.begin::after{
+    content: '';
+    width: 100%;
+    background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+    position: absolute;
+    bottom: -100px;
+    z-index: -1;
+    left: 0;
+    height: 725px;
+}
+.begin-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #121212;
+}
+.begin-desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #313131;
+    opacity: 0.8;
+    margin: 27px 0 35px;
+}
+.begin-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #313131;
+    opacity: 0.8;
+}
+.begin-list{
+    display: flex;
+    column-gap: 64px;
+    margin-top: 64px;
+    position: relative;
+}
+.begin-list::before{
+    content: 'КАМЧАТКА';
+    position: absolute;
+    top: 200px;
+    right: -130px;
+    font-size: 180px;
+    color: #30323470;
+    font-weight: bold;
+}
+.begin-list::after{
+    content: url("../image/begin-sam.png");
+    position: absolute;
+    top: 170px;
+    right: -135px;
+}
+.begin-item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.begin-category{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212121;
+}
+.begin-info{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+.begin-sub-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 381px 0 32px;
+}
+.begin-sub-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+    margin-bottom: 13px;
+}
+.begin-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.begin-bg{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    z-index: -2;
 }
