@@ -114,6 +114,7 @@
 .begin{
     padding: 110px 0 147px;
     position: relative;
+    background: #ffffff;
 }
 .begin::before{
     content: '';
