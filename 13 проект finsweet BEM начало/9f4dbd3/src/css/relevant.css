@@ -1,0 +1,28 @@
+.relevant {
+  padding: 128px 0;
+}
+.relevant__row {
+  display: flex;
+  column-gap: 24px;
+}
+.relevant__block {
+  width: calc(33.333% - 16px);
+  padding: 80px;
+  background: #fff5eb;
+  border-bottom: 16px solid #FFD2A4;
+}
+.relevant__title {
+  margin: 16px 0 64px;
+}
+.relevant__block-title {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+  margin: 24px 0 8px;
+}
+.relevant__block-desc {
+  line-height: 24px;
+  color: #161722;
+}
