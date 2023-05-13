@@ -1,5 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Jost:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@400;700&display=swap");
 * {
-  font-size: 12px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s;
+}
+*::before, * ::after, * :hover {
+  transition: 0.3s;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+a {
   text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1219px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: flex;
+  gap: 25px;
+}
+.social-media__link {
+  width: 45px;
+  height: 45px;
+}
+.social-media__link a {
+  background: linear-gradient(0deg, #111110, #111110), #c4c4c4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header {
+  padding: 21px 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.header__logo {
+  width: 80px;
+}
+.header__links {
+  display: flex;
+  gap: 40px;
+}
+.header__links-item {
+  font-family: "Jost", sans-serif;
+  position: relative;
+  font-size: 18px;
+  color: #ffffff;
+}
+.header__links-item::before {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.61);
+  border-radius: 16px;
+}
+.header__links-item--active::before, .header__links-item:hover::before {
+  width: calc(100% + 10px);
+}
+.header__btns {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.header__btn {
+  padding: 10px 21px;
+  background: #935243;
+  border-radius: 5px;
+  white-space: nowrap;
+  color: #fff;
+}
+.header__btn:first-child {
+  background: transparent;
+  border: 2px solid #ffffff;
+  opacity: 0.45;
+}
+.header__btn:last-child {
+  border: none;
 }
