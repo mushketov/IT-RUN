@@ -1,0 +1,16 @@
+.social-media {
+  display: flex;
+  gap: 25px;
+  &__link {
+    width: 45px;
+    height: 45px;
+    a{
+          background: linear-gradient(0deg, #111110, #111110), #c4c4c4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+  }
+}
