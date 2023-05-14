@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
   padding: 21px 0;
   background: linear-gradient(
     0deg,
@@ -48,15 +54,20 @@
   }
   &__btn {
     padding: 10px 21px;
-    background: #935243;
+    // background: #935243;
     border-radius: 5px;
     white-space: nowrap;
-    color: #fff;
+    background: linear-gradient(180deg, #ffa12a 0%, #feef6d 100%);
+    border: 1.78082px solid #fff61b;
+    font-weight: 700;
+    // font-size: 22px;
+    color: #774200;
   }
   &__btn:first-child {
     background: transparent;
     border: 2px solid #ffffff;
     opacity: 0.45;
+    color: #ffffff;
   }
   &__btn:last-child {
     border: none;

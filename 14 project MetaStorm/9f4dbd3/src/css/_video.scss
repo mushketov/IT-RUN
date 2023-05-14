@@ -1,0 +1,10 @@
+.video{
+  padding: 20px 0 240px;
+  margin: 0 auto;
+  background: url('../images/video/video-bg.png');
+  &__row{
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+  }
+}
