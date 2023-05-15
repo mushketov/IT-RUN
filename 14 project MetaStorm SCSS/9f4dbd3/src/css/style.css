@@ -175,7 +175,7 @@ button {
   color: rgba(255, 255, 255, 0.68);
 }
 .home__list-item::before {
-  content: url(../icons/home/aim.svg);
+  content: url(../images/home/aim.svg);
   top: 0;
   height: 35px;
   width: 35px;
@@ -244,7 +244,7 @@ button {
 }
 
 .what {
-  padding: 155px 0 255px;
+  padding: 100px 0 255px;
   position: relative;
 }
 .what__subtitle {
@@ -277,4 +277,8 @@ button {
   position: relative;
   top: -100px;
   z-index: 2;
+}
+
+.asd {
+  font-size: 22px;
 }
