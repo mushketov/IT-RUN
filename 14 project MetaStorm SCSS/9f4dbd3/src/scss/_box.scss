@@ -1,0 +1,93 @@
+.box {
+  padding: 0px 0 160px;
+  position: relative;
+  top: -120px;
+  background: black url("../images/box/bg.png") center/cover no-repeat;
+  &__title {
+    margin-bottom: 27px;
+  }
+  &__desc {
+    max-width: 1100px;
+    margin: 0 auto 51px;
+  }
+  &__row {
+    position: relative;
+  }
+  &__prev{
+    opacity: 0.69;
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    left: -57px;
+    transform: translateY(-45%);
+    &.swiper-button-disabled{
+      opacity: 0.19;
+    }
+  }
+  &__next{
+    opacity: 0.69;
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    right: -57px;
+    transform: translateY(-45%);
+    &.swiper-button-disabled{
+      opacity: 0.19;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 448px;
+    padding: 86px 60px;
+    // background: url('../images/box/item-bg.png') center/cover no-repeat;
+    &-img {
+      width: 100%;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 25px;
+      text-align: center;
+      color: #ffffff;
+    }
+    &-1 {
+      background: url("../images/box/item-bg1.png") center/cover no-repeat;
+    }
+    &-2 {
+      background: url("../images/box/item-bg2.png") center/cover no-repeat;
+    }
+    &-3 {
+      background: url("../images/box/item-bg3.png") center/cover no-repeat;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 35px !important;
+  height: 35px !important;
+  background: #c4c4c4 !important;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    box-shadow: 0px 3.61702px 7.23404px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.swiper-pagination-bullet-active {
+  width: 35px !important;
+  height: 35px !important;
+  background: linear-gradient(180deg, #ffa12a 0%, #feef6d 100%), #fefe40 !important;
+}
+.swiper-pagination{
+  position: relative!important;
+}
