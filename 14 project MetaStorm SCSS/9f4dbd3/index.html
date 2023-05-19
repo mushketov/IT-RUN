@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css"/>
   </head>
   <body>
     <header class="header">
@@ -107,6 +107,9 @@
     </header>
     <main>
       <section class="home">
+        <div class="home__bg">
+          <video class="home__video" src="./src/images/home/video.mp4" autoplay="" muted="" loop=""></video>
+        </div>
         <div class="container">
           <div class="home__wrapper">
             <h1 class="home__title">
@@ -1563,6 +1566,109 @@
           </div>
         </div>
       </section>
+      <section class="gear">
+        <div class="container">
+          <h2 class="gear__title title">NFT EQUIPMENTS</h2>
+          <div class="gear__content">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (1).png" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (2).png" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (3).png" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (4).png" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (5).png" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gear__card">
+                    <img src="./src/images/gear/weapon (6).png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="gear__prev">
+              <svg
+                width="28"
+                height="48"
+                viewBox="0 0 28 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.6001 41.0002L10.6001 24.0002L27.6001 7.0002L24.2001 0.200195L0.400101 24.0002L24.2001 47.8002L27.6001 41.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <span class="gear__next">
+              <svg
+                width="28"
+                height="48"
+                viewBox="0 0 28 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.399902 41.0002L17.3999 24.0002L0.399902 7.0002L3.7999 0.200195L27.5999 24.0002L3.7999 47.8002L0.399902 41.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+          </div>
+          <div thumbsSlider class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (1).png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (2).png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (3).png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (4).png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (5).png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gear__thumb">
+                  <img src="./src/images/gear/weapon (6).png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -1579,6 +1685,23 @@
         navigation: {
           nextEl: ".box__next",
           prevEl: ".box__prev",
+        },
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".gear__next",
+          prevEl: ".gear__prev",
+        },
+        thumbs: {
+          swiper: swiper3,
         },
       });
     </script>

@@ -1,0 +1,74 @@
+.gear {
+  top: -120px;
+  padding-bottom: 126px;
+  position: relative;
+  background: #000;
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__content {
+    position: relative;
+  }
+  &__card {
+    width: 100%;
+    // border: 1px solid red;
+    border: 3px solid #6625d6;
+    border-radius: 25px;
+    padding: 30px 40px;
+    img {
+      width: 100%;
+    }
+  }
+  &__thumb {
+    // border: 3px solid #515050;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px 60px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      min-height: 50%;
+      min-width: 333%;
+    }
+  }
+  &__next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    right: 200px;
+    transform: translateY(-50%);
+    opacity: 0.59;
+    &.swiper-button-disabled {
+      opacity: 0.19;
+    }
+  }
+  &__prev {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    left: 200px;
+    transform: translateY(-50%);
+    opacity: 0.59;
+    &.swiper-button-disabled {
+      opacity: 0.19;
+    }
+  }
+}
+.mySwiper3 .swiper-slide {
+  border: 3px solid #515050;
+  border-radius: 10px;
+  &.swiper-slide-thumb-active {
+    border: 3px solid #6625d6;
+  }
+}
+.gear .mySwiper2 {
+  width: 50% !important;
+}
+.gear .mySwiper3 .swiper-slide {
+  opacity: 0.4;
+}
+.gear .mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+}

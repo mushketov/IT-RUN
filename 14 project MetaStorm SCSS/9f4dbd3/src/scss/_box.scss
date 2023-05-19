@@ -45,7 +45,7 @@
     top: 35%;
     right: 0;
     cursor: pointer;
-    opacity: 0.69;
+    opacity: 0.59;
     &.swiper-button-disabled{
       opacity: 0.19;
     }
@@ -55,7 +55,7 @@
     top: 35%;
     left: 0;
     cursor: pointer;
-    opacity: 0.69;
+    opacity: 0.59;
     &.swiper-button-disabled{
       opacity: 0.19;
     }
@@ -112,8 +112,4 @@
 }
 .swiper-pagination {
   position: relative !important;
-  // top: -100px !important;
-}
-.swiper-button-next::before {
-  content: url("");
 }
