@@ -12,10 +12,6 @@
     <link rel="icon" href="src/images/header/logo.png" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
@@ -1470,11 +1466,11 @@
             helicopter, etc.), the ability to open new maps for battles, the
             ability to move to a new play tier with more strong rivals.
           </p>
-          <div class="box__row">
+          <div class="box__content">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="box__item box__item-1">
+                  <div class="box__item">
                     <img
                       src="./src/images/box/item1.png"
                       alt=""
@@ -1484,25 +1480,27 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="box__item box__item-2">
+                  <div class="box__item box__item--black">
                     <img
                       src="./src/images/box/item2.png"
                       alt=""
                       class="box__item-img"
                     />
-                    <h2 class="box__item-title">BOX Weapon</h2>
+                    <h2 class="box__item-title">BOX Outfit</h2>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="box__item box__item-3">
+                  <div class="box__item box__item--fio">
                     <img
                       src="./src/images/box/item3.png"
                       alt=""
                       class="box__item-img"
                     />
-                    <h2 class="box__item-title">BOX Weapon</h2>
+                    <h2 class="box__item-title">BOX Skills</h2>
                   </div>
-                  <div class="box__item box__item-1">
+                </div>
+                <div class="swiper-slide">
+                  <div class="box__item">
                     <img
                       src="./src/images/box/item1.png"
                       alt=""
@@ -1512,30 +1510,30 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="box__item box__item-2">
+                  <div class="box__item box__item--black">
                     <img
                       src="./src/images/box/item2.png"
                       alt=""
                       class="box__item-img"
                     />
-                    <h2 class="box__item-title">BOX Weapon</h2>
+                    <h2 class="box__item-title">BOX Outfit</h2>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="box__item box__item-3">
+                  <div class="box__item box__item--fio">
                     <img
                       src="./src/images/box/item3.png"
                       alt=""
                       class="box__item-img"
                     />
-                    <h2 class="box__item-title">BOX Weapon</h2>
+                    <h2 class="box__item-title">BOX Skills</h2>
                   </div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-            <span class="box__prev"
-              ><svg
+            <span class="box__prev">
+              <svg
                 width="28"
                 height="48"
                 viewBox="0 0 28 48"
@@ -1548,50 +1546,8 @@
                 />
               </svg>
             </span>
-            <span class="box__next"
-              ><svg
-                width="28"
-                height="48"
-                viewBox="0 0 28 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.399902 41.0002L17.3999 24.0002L0.399902 7.0002L3.7999 0.200195L27.5999 24.0002L3.7999 47.8002L0.399902 41.0002Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </section>
-      <section class="gear">
-        <div class="container">
-          <h2 class="gear__title title">NFT EQUIPMENTS</h2>
-          <div class="gear__row">
-            <div class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swipper-slide">
-                  <img src="./src/images/gear/weapon1.png" />
-                </div>
-              </div>
-            </div>
-            <span class="gear__prev"
-              ><svg
-                width="28"
-                height="48"
-                viewBox="0 0 28 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.6001 41.0002L10.6001 24.0002L27.6001 7.0002L24.2001 0.200195L0.400101 24.0002L24.2001 47.8002L27.6001 41.0002Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
-            <span class="gear__next"
-              ><svg
+            <span class="box__next">
+              <svg
                 width="28"
                 height="48"
                 viewBox="0 0 28 48"
@@ -1611,12 +1567,11 @@
     <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
