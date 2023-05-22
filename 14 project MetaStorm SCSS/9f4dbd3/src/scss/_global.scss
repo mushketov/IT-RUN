@@ -20,7 +20,6 @@
   text-transform: uppercase;
   text-align: center;
   background: linear-gradient(
-    
     180deg,
     #d2d8de 0%,
     #feffff 23.96%,
@@ -37,4 +36,20 @@
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+}
+.btn {
+  border-radius: 7.15189px;
+  width: 264px;
+  height: 65px;
+  font-weight: 700;
+  border: 1.78082px solid #fff61b;
+  background: url(../images/home/btn-bg.svg),
+    linear-gradient(180deg, #ffa12a 0%, #feef6d 100%);
+  font-size: 22px;
+  color: #774200;
+  &:last-child {
+    background: transparent;
+    border: 1.78082px solid #c4c4c4;
+    color: #c4c4c4;
+  }
 }

@@ -1,0 +1,66 @@
+.concept {
+  background: black url("../images/concept/bg.png") center/cover no-repeat;
+  position: relative;
+  top: -130px;
+  padding: 100px 0 0;
+  color: white;
+  height: 1198px;
+  &__title {
+    margin-bottom: 58px;
+  }
+  &__row {
+    display: flex;
+    column-gap: 63px;
+  }
+  &__box {
+    width: calc(50% - 31px);
+    &-desc {
+      max-width: 573px;
+      margin-bottom: 51px;
+      text-align: left;
+    }
+    &-top {
+      display: flex;
+      column-gap: 13px;
+      padding: 18px 0;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(
+        180deg,
+        #5b2b30 -90.77%,
+        #6b3935 12.11%,
+        #a25b48 97.02%
+      );
+      border-radius: 5.49533px 5.49533px 0px 0px;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 22.2603px;
+      color: #ffffff;
+      text-shadow: 0px 1.83178px 0px rgba(152, 97, 86, 0.35);
+    }
+    &-menu {
+      padding: 22px 0 24px 75px;
+      border: 3px solid #515050;
+      border-radius: 0px 0px 25px 25px;
+      border-top: none;
+    }
+    &-item {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      font-size: 20px;
+      line-height: 196.5%;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.68);
+    }
+    &-play{
+      margin-bottom: 40px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    column-gap: 44px;
+  }
+}
