@@ -635,3 +635,49 @@ button {
 .token__item::before {
   content: url(../images/token/star.svg);
 }
+
+.team {
+  background: black url("../images/team/bg.png") center/100% no-repeat;
+  height: 1080px;
+  padding: 100px 0 100px;
+  position: relative;
+  text-align: center;
+  top: -755px;
+  z-index: -1;
+}
+.team__desc {
+  max-width: 1043px;
+  margin: 30px auto 50px;
+}
+.team__photos {
+  display: flex;
+  width: 1170px;
+  flex-wrap: wrap;
+  margin-bottom: 58px;
+}
+.team__card {
+  width: 195px;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3137254902);
+}
+.team__img {
+  max-width: 195px;
+  max-height: 195px;
+}
+.team__icon {
+  max-width: 80px;
+  background: transparent;
+}
+.team__botton {
+  border-radius: 7.15189px;
+  width: 350px;
+  height: 65px;
+  font-weight: 700;
+  border: 1.78082px solid #fff61b;
+  background: url(../images/home/btn-bg.svg), linear-gradient(180deg, #ffa12a 0%, #feef6d 100%);
+  font-size: 22px;
+  color: #774200;
+}
