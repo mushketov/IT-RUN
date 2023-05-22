@@ -60,6 +60,7 @@ button {
 .title {
   font-weight: 700;
   font-size: 43px;
+  text-transform: uppercase;
   text-align: center;
   background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
   -webkit-background-clip: text;
@@ -486,4 +487,32 @@ button {
 
 .gear .mySwiper3 .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.vr {
+  padding: 69px 0 141px;
+  background: black url("../images/vr/bg.png") center/cover no-repeat;
+  top: -125px;
+  position: relative;
+}
+.vr__title {
+  margin-top: -75px;
+}
+.vr__desc {
+  margin: 15px auto 90px;
+  max-width: 890px;
+  text-align: center;
+}
+.vr__preview {
+  margin: 0 auto;
+  height: 413px;
+  width: 734px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/vr/prev.png") center/cover no-repeat;
+}
+.vr__preview__preview-icon {
+  max-width: 75px;
+  max-height: 75px;
 }
