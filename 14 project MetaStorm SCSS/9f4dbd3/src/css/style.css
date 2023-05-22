@@ -664,8 +664,12 @@ button {
   background: rgba(0, 0, 0, 0.3137254902);
 }
 .team__img {
+  width: 80%;
   max-width: 195px;
   max-height: 195px;
+}
+.team__img:hover {
+  width: 100%;
 }
 .team__icon {
   max-width: 80px;
