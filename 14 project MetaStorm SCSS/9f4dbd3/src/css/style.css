@@ -34,8 +34,12 @@ button {
   cursor: pointer;
 }
 
+.main {
+  height: 0px;
+}
+
 .container {
-  max-width: 1219px;
+  max-width: 1170px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -519,7 +523,7 @@ button {
 }
 
 .concept {
-  background: black url("../images/concept/bg.png") center/cover no-repeat;
+  background: black url("../images/concept/bg.png") center/100% no-repeat;
   position: relative;
   top: -130px;
   padding: 100px 0 0;
@@ -582,4 +586,52 @@ button {
   display: flex;
   -moz-column-gap: 44px;
        column-gap: 44px;
+}
+
+.token {
+  background: url("../images/token/bg.png") center/cover no-repeat;
+  position: relative;
+  top: -580px;
+  height: 1059px;
+  color: aliceblue;
+  padding: 150px 0 200px;
+}
+.token__title {
+  text-align: left;
+  left: 45px;
+  position: relative;
+  margin-bottom: 28px;
+}
+.token__cost {
+  width: 448px;
+  padding: 23px 66px 23px 45px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  border: 2px solid #515050;
+  border-radius: 20px;
+  margin-bottom: 46px;
+  background: rgba(196, 196, 196, 0.1);
+}
+.token__name {
+  font-weight: 600;
+  font-size: 24px;
+  background: linear-gradient(180deg, #ffa12a 0%, #feef6d 100%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.token__desc {
+  max-width: 460px;
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+}
+.token__item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.token__item::before {
+  content: url(../images/token/star.svg);
 }

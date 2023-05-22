@@ -30,8 +30,11 @@ button {
   border: none;
   cursor: pointer;
 }
+.main{
+  height: 0px;
+}
 .container {
-  max-width: 1219px;
+  max-width: 1170px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -45,3 +48,4 @@ button {
 @import "./gear";
 @import "./vr";
 @import "./concept";
+@import "./token";
