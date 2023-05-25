@@ -1,0 +1,40 @@
+.footer {
+  background: black;
+  // width: 100%;
+  position: relative;
+  padding: 30px;
+  top: -1000px;
+  color: white;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copy {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__social {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(0deg, #111110, #111110), #c4c4c4;
+    border-radius: 5px;
+  }
+  &__social-contact {
+    width: 80px;
+    background: none;
+  }
+  &__right-wrap{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+}

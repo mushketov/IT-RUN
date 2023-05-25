@@ -727,3 +727,45 @@ button {
   border: 2px solid rgba(255, 255, 255, 0.58);
   border-radius: 12px;
 }
+
+.footer {
+  background: black;
+  position: relative;
+  padding: 30px;
+  top: -1000px;
+  color: white;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copy {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.footer__social {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  background: linear-gradient(0deg, #111110, #111110), #c4c4c4;
+  border-radius: 5px;
+}
+.footer__social-contact {
+  width: 80px;
+  background: none;
+}
+.footer__right-wrap {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
