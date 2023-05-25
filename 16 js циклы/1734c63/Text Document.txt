@@ -1,0 +1,2 @@
+https://yandexwebcache.net/yandbtm?fmode=inject&tm=1685044705&tld=ru&lang=ru&la=1684203904&text=дан+массив+с+элементами+%5B1%2C+2%2C+3%2C+4%2C+5%5D.+С+помощью+цикла+for+выведите+все+эти+элементы+на+экран&url=http%3A//old.code.mu/tasks/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html&l10n=ru&mime=html&sign=2870537ddfcf0eead5b2dccee892c9eb&keyno=0
+
