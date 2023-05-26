@@ -9,8 +9,8 @@
   &__text {
     max-width: 40%;
     position: relative;
-    &::before{
-      content: url('../../images/home/left-line.svg');
+    &::before {
+      content: url("../../images/home/left-line.svg");
       position: absolute;
       left: -90px;
       top: -30px;
@@ -34,7 +34,7 @@
   &__desc {
     margin-bottom: 66px;
   }
-  &__banner {
+    &__banner {
     width: 40%;
     background: rgba(0, 0, 0, 0.13);
     padding: 17px;

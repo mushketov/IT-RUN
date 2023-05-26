@@ -73,6 +73,7 @@ ol {
 
 .header {
   padding: 50px 0 0;
+  position: relative;
 }
 .header__top {
   display: flex;
@@ -87,6 +88,7 @@ ol {
 }
 .header__menu {
   display: flex;
+  z-index: 10;
   -moz-column-gap: 41px;
        column-gap: 41px;
 }
@@ -97,6 +99,7 @@ ol {
   color: #ffffff;
 }
 .header__btns {
+  z-index: 10;
   display: flex;
   -moz-column-gap: 38px;
        column-gap: 38px;

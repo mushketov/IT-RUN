@@ -1,5 +1,6 @@
 .header {
   padding: 50px 0 0;
+  position: relative;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,7 @@
   }
   &__menu {
     display: flex;
+    z-index: 10;
     column-gap: 41px;
     &-link {
       font-weight: 700;
@@ -21,6 +23,7 @@
     }
   }
   &__btns {
+    z-index: 10;
     display: flex;
     column-gap: 38px;
   }
