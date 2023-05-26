@@ -6,3 +6,4 @@
 5. https://mushketov.github.io/IT-RUN/11%20Позиционирование%20элементов/f4e46bd dream kamchatka :large_blue_circle:
 6. https://mushketov.github.io/IT-RUN/13%20проект%20finsweet%20BEM%20начало/9f4dbd3 finsweet 
 7. https://mushketov.github.io/IT-RUN/14%20project%20MetaStorm%20SCSS/9f4dbd3 MetaStorm :red_circle:
+8. https://mushketov.github.io/IT-RUN/17%20проект%20Hydra/ef0c2b3 Hydra
