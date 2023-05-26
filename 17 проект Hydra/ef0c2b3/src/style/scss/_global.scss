@@ -10,6 +10,9 @@
   background: #302c42;
   color: #ffffff;
 }
+html {
+  overflow-x: hidden;
+}
 button {
   border: none;
   cursor: pointer;
@@ -20,7 +23,7 @@ ol {
 }
 .container {
   width: 1370px;
-  padding: 0 20px;
+  padding: 0 40px 0 20px;
   margin: 0 auto;
 }
 .btn-small {
@@ -53,7 +56,7 @@ ol {
   text-transform: uppercase;
 }
 .desc {
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
