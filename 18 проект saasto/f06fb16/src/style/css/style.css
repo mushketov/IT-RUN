@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Jost:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.container {
+  width: 1370px;
+  padding: 0 40px 0 20px;
+  margin: 0 auto;
+}
