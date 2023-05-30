@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Jost:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@400;700&display=swap");
-
+@import "../../fonts/fonts";
 @import "./reset";
 @import "./variables";
-@import "./mexins";
+@import "./mixins";
+@import "./animations";
 @import "./global";
 @import "./header";
 @import "./footer";
+@import "./collab";

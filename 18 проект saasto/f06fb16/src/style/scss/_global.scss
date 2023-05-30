@@ -1,0 +1,15 @@
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container {
+  width: 1920px - 375px * 2;
+  margin: 0 auto;
+}
+.btn240 {
+  padding: 24px 40px;
+  background: #ff553e;
+  border-radius: 40px;
+  @include text($popins, normal, 500, 18px, 28px, #fff);
+}

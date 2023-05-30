@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style/css/style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/style/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__logo">
+          <img src="./src/images/header/Logo.svg" alt="saasto" />
+        </h1>
+        <nav class="header__nav">
+          <a class="header__link" href="#">Demos</a>
+          <a class="header__link" href="#">Features</a>
+          <a class="header__link" href="#">Pricing</a>
+          <a class="header__link" href="#">Contact</a>
+        </nav>
+        <div class="header__user">
+          <a class="header__login" href="">Login</a>
+          <button class="header__sing-up" type="button">Sign up</button>
+        </div>
+      </div>
+    </header>
 
-  <script src="./src/js/main.js"></script>
-</body>
+    <main class="main">
+      <section class="collab">
+        <div class="container">
+          <h2 class="collab__title">
+            A collaborative Time Tracking that you Need
+          </h2>
+          <p class="collab__desc">
+            An enim nullam tempor sapien gravida donec enim ipsum porta <br />
+            justo congue magna at pretium purus pretium ligula
+          </p>
+          <button class="btn240">Start 14 Days Trial</button>
+          <div class="collab__alarm">
+            <img src="./src/images/collab/alarm.png" alt="">
+          </div>
+          <div class="collab__phone-left">
+            <img src="./src/images/collab/phone-left.svg" alt="">
+          </div>
+          <div class="collab__phone-right">
+            <img src="./src/images/collab/phone-right.png" alt="">
+          </div>
+        </div>
+        <div class="collab__bottom">
+          <div class="wrapper">
+            <div class="collab__stats-item">
+              <h3 class="collab__stats-title">15k+</h3>
+              <p class="collab__stats-desc">Active user</p>
+            </div>
+            <div class="collab__stats-item">
+              <h3 class="collab__stats-title">30k</h3>
+              <p class="collab__stats-desc">Total Download</p>
+            </div>
+            <div class="collab__stats-item">
+              <h3 class="collab__stats-title">10k</h3>
+              <p class="collab__stats-desc">Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="collab__decor">
+          <img class="collab__decor-svg" src="./src/images/collab/Elements.svg" alt="">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>

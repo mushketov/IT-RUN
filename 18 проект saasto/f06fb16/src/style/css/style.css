@@ -1,16 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Jost:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-}
-
-html {
-  overflow-x: hidden;
 }
 
 button {
@@ -18,13 +10,202 @@ button {
   cursor: pointer;
 }
 
-ul,
-ol {
+li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+@keyframes jump {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .container {
-  width: 1370px;
-  padding: 0 40px 0 20px;
+  width: 1170px;
   margin: 0 auto;
+}
+
+.btn240 {
+  padding: 24px 40px;
+  background: #ff553e;
+  border-radius: 40px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header {
+  background: #FFF8F2;
+  z-index: 5;
+  position: relative;
+}
+.header .container {
+  padding: 50px 0 0px;
+  display: flex;
+  -moz-column-gap: 141px;
+       column-gap: 141px;
+  align-items: center;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__nav {
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+.header__link {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1c0e0d;
+}
+.header__user {
+  display: flex;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  align-items: center;
+}
+.header__login {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ff553e;
+}
+.header__sing-up {
+  padding: 16px 32px;
+  background: #ff553e;
+  border-radius: 34px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.header__sing-up:hover {
+  background: #ffc7bf;
+}
+
+.collab {
+  background: #fff8f2;
+  position: relative;
+}
+.collab .container {
+  padding: 150px 0 0;
+  width: 800px;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+}
+.collab__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 90px;
+  color: #1c0e0d;
+  margin-bottom: 24px;
+}
+.collab__desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(64, 32, 30, 0.5019607843);
+  margin-bottom: 68px;
+}
+.collab .btn240:hover {
+  background: #ffc7bf;
+}
+.collab__alarm {
+  position: absolute;
+  top: 105px;
+  left: -150px;
+}
+.collab__phone-left {
+  position: absolute;
+  top: 45%;
+  left: -50%;
+  transition: 0.3s;
+}
+.collab__phone-left img {
+  width: 75%;
+  animation: infinite 4s jump;
+}
+.collab__phone-left:hover {
+  transform: scale(1.1);
+}
+.collab__phone-right {
+  position: absolute;
+  top: 215px;
+  right: -44%;
+  width: 62%;
+  height: 50%;
+}
+.collab__phone-right img {
+  width: 75%;
+}
+.collab__bottom {
+  z-index: 5;
+  position: relative;
+  margin-top: 182px;
+  background: #f3f3f3;
+  -webkit-clip-path: polygon(0 0, 75% 0, 83% 100%, 0% 100%);
+          clip-path: polygon(0 0, 75% 0, 83% 100%, 0% 100%);
+}
+.collab__bottom .wrapper {
+  margin: 0 auto 0 300px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 180px;
+       column-gap: 180px;
+}
+.collab__stats-item {
+  margin: 20px 0 20px;
+}
+.collab__stats-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #18063c;
+}
+.collab__stats-desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(64, 64, 64, 0.3764705882);
+}
+.collab__decor {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  right: 0;
+}
+.collab__decor img {
+  width: 100%;
 }
