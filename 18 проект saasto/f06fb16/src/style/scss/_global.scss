@@ -11,5 +11,5 @@ body {
   padding: 24px 40px;
   background: #ff553e;
   border-radius: 40px;
-  @include text($popins, normal, 500, 18px, 28px, #fff);
+  @include text($popins, normal, 500, $fs18, 28px, #fff);
 }

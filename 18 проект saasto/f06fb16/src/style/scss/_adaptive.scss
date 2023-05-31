@@ -1,0 +1,102 @@
+/*мобильное вёрстка*/
+@media (min-width: 376px) {
+}
+
+@media (min-width: 481px) {
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1201px) {
+}
+
+/*desktop вёрстка*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1201px) {
+}
+
+@media (max-width: 1025px) {
+}
+
+@media (max-width: 769px) {
+}
+
+@media (max-width: 376px) {
+  .header {
+    display: none;
+  }
+  .collab {
+    .container {
+      padding: 144px 0 80px;
+      text-align: left;
+      max-width: 290px;
+    }
+    &__title {
+      @include text($popins, normal, 700, $fs28, 160%, #1c0e0d);
+      margin-bottom: 10px;
+    }
+    &__desc {
+      @include text($inter, normal, 400, $fs16, 36px, #40201e);
+      margin-bottom: 50px;
+      max-width: 95%;
+    }
+    &__alarm {
+      top: 110px;
+      left: 215px;
+      right: 0;
+      width: 27%;
+    }
+    &__phone-right,
+    &__phone-left {
+      display: none;
+    }
+    &__decor {
+      display: none;
+      &375 {
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &__bottom {
+      width: 375px;
+      clip-path: none;
+      position: relative;
+      margin: 0;
+      .wrapper {
+        padding: 55px 0 40px;
+        flex-direction: column;
+      }
+    }
+    &__rocket {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &__stats-item {
+      text-align: center;
+      width: 180px;
+      border-bottom: 2px solid #1e0c3e20;
+      &:last-child {
+        border: none;
+      }
+    }
+    &__stats-title {
+      @include text($popins, normal, 600, $fs64, 64px, #18063c);
+      margin-bottom: 40px;
+    }
+    &__stats-desc {
+      margin-bottom: 50px;
+    }
+  }
+}

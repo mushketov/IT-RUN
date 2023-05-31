@@ -16,7 +16,7 @@
     column-gap: 48px;
   }
   &__link {
-    @include text($popins, normal, 400, 18px, 24px, #1c0e0d);
+    @include text($popins, normal, 400, $fs18, 24px, #1c0e0d);
   }
   &__user {
     display: flex;
@@ -24,13 +24,13 @@
     align-items: center;
   }
   &__login {
-    @include text($popins, normal, 500, 18px, 28px, #ff553e);
+    @include text($popins, normal, 500, $fs18, 28px, #ff553e);
   }
   &__sing-up {
     padding: 16px 32px;
     background: #ff553e;
     border-radius: 34px;
-    @include text($popins, normal, 500, 18px, 28px, #ffffff);
+    @include text($popins, normal, 500, $fs18, 28px, #ffffff);
     &:hover{
       background: #ffc7bf;
     }
