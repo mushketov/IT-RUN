@@ -4,10 +4,11 @@
   padding: 274px 0 255px;
   background: url("../../images/home//bg.png") center/cover no-repeat;
   &__title {
+    display: inline-block;
     font-family: "Jura", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 62px;
     line-height: 120%;
     text-transform: uppercase;
     color: #ffffff;

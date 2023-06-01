@@ -7,6 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/style/css/animate.min.css">
     <link rel="stylesheet" href="./src/style/css/style.css" />
     <title>Document</title>
   </head>
@@ -16,9 +17,10 @@
         <div class="header__wrap">
           <div class="header__left">
             <img
-              class="header__burger-menu"
+              class="header__burger-menu animate__animated animate__tada animate__infinite animate__slower"
               src="./src/images/header/burgermenu.svg"
               alt=""
+              onclick="myFunction()"
             />
             <img class="header__map" src="./src/images/header/map.svg" alt="" />
             <p class="header__phone">8 981 120-11-17</p>
@@ -45,21 +47,59 @@
           </div>
         </div>
       </div>
-      <div class="menu-bar" id="menu-bar">
-        <a class="menu-bar-link" href="">Кухонные ножи TUOTOWN</a>
-        <a class="menu-bar-link" href="">Складные ножи TUOTOWN</a>
-        <a class="menu-bar-link" href="">Кухонные ножи QXF</a>
-        <a class="menu-bar-link" href="">Точильные камни</a>
-        <a class="menu-bar-link" href="">Наборы для BBQ</a>
-        <a class="menu-bar-link" href="">Кухонные принадлежности</a>
-        <a class="menu-bar-link" href="">Туристические товары</a>
+      <div class="header__burger" id="header__burger">
+        <ul class="header__burger-top">
+          <li class="header__burger-item">
+            <img
+              class="header__burger-arrow"
+              src="./src/images/header/burger-arrow.svg"
+              onclick="myFunction()"
+              alt=""
+            />
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Кухонные ножи TUOTOWN</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Складные ножи TUOTOWN</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Кухонные ножи QXF</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Точильные камни</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Наборы для BBQ</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Кухонные принадлежности</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-top" href="">Туристические товары</a>
+          </li>
+        </ul>
+        <ul class="header__burger-bottom">
+          <li class="header__burger-item">
+            <a class="header__burger-link-bottom" href="">Новости</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-bottom" href="">О компании</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-bottom" href="">Контакты</a>
+          </li>
+          <li class="header__burger-item">
+            <a class="header__burger-link-bottom" href="">Как проехать</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main class="main">
       <section class="home">
-        <h2 class="home__title">Дом и Ножи</h2>
-        <p class="home__desc">
+        <h2 class="home__title animate__animated animate__bounceInDown">Дом и Ножи</h2>
+        <p class="home__desc   animate__animated animate__zoomIn">
           Эксклюзивные технологии на страже чистоты и уюта в вашем доме
         </p>
       </section>
@@ -68,12 +108,7 @@
     <footer class="footer">
       <div class="container"></div>
     </footer>
-    <script>
-      function myFunction() {
-        var element = document.getElementById("menu-bar");
-        element.classList.toggle("mystyle");
-      }
-    </script>
+
     <script src="./src/js/main.js"></script>
   </body>
 </html>
