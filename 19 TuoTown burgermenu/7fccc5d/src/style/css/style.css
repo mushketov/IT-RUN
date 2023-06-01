@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jura:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(33, 33, 33, 0.8);
+}
+.header .container {
+  margin: 0 auto;
+  padding: 18px 54px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  width: 25%;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  align-items: center;
+  margin-right: auto;
+}
+.header__left img {
+  width: 20px;
+  height: 20px;
+}
+.header__phone {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header .logo {
+  width: 146px;
+  height: 36px;
+}
+.header__right {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-left: auto;
+}
+
+.menu-bar {
+  position: fixed;
+  padding: 50px;
+  height: 100vh;
+  background: pink;
+  display: none;
+  flex-direction: column;
+}
+.menu-bar_active {
+  display: block;
+}
+
+/*мобильное вёрстка*/
+/*desktop вёрстка*/
+.home {
+  height: 100vh;
+  text-align: center;
+  padding: 274px 0 255px;
+  background: url("../../images/home//bg.png") center/cover no-repeat;
+}
+.home__title {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.home__desc {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

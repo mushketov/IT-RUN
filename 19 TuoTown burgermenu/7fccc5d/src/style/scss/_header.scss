@@ -1,0 +1,62 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(33, 33, 33, 0.8);
+  .container {
+    margin: 0 auto;
+    padding: 18px 54px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    // column-gap: 600px;
+    // justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    width: 25%;
+    column-gap: 34px;
+    align-items: center;
+    margin-right: auto;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__phone {
+    font-family: "Jura", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .logo{
+    width: 146px;
+    height: 36px;
+    // left: -33px;
+    // position: relative;
+  }
+  &__right {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    column-gap: 30px;
+    margin-left: auto;
+  }
+}
+.menu-bar{
+  position: fixed;
+  padding: 50px;
+  height: 100vh;
+  background: pink;
+  display: none;
+  flex-direction: column;
+  &_active{
+    display: block;
+  }
+}
