@@ -1,0 +1,65 @@
+.home {
+  background: url("../../images/home/bg.png") center/cover no-repeat;
+  padding: 200px 0 368px;
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("../../images/home/bg-text.png") bottom center/contain
+      no-repeat;
+  }
+  &__title {
+    font-family: "Futura Md BT", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.16em;
+  }
+  &__details {
+    display: flex;
+    padding-right: 50px;
+    margin: 43px 0 35px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price {
+    font-family: "Futura Hv BT", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+  }
+  &__details-right {
+    display: flex;
+    align-items: center;
+  }
+  &__size {
+    line-height: 19px;
+    margin-right: 20px;
+  }
+  &__shop {
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  &__size-select {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__btn {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 36px;
+    background: transparent;
+    font-family: "Futura Bk BT",sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+  }
+}
