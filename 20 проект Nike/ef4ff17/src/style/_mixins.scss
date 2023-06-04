@@ -1,0 +1,16 @@
+ @mixin font($family, $style, $weight, $size, $height, $color) {
+   font-family: $family;
+   font-style: $style;
+   font-weight: $weight;
+   font-size: $size;
+   line-height: $height;
+   color: $color;
+ }
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// @include text($popins, normal, 400, 18px, 24px, #1c0e0d);

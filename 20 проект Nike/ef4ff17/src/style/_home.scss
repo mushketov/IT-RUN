@@ -1,0 +1,92 @@
+.home {
+  position: relative;
+  padding: 270px 0 555px;
+  background: black url("../images/home/bg.png") center/cover no-repeat;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../images/home/bg-text.png") left bottom/contain
+      no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../images/home/left-dots.svg') no-repeat;
+      left: 0;
+      width: 156px;
+      height: 491px;
+      & circle{
+        color: aqua;
+        background: green;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/home/image-line360.svg") no-repeat;
+      bottom: -50px;
+      left: 55%;
+      transform: translateX(-50%);
+      width: 560px;
+      height: 76px;
+      cursor: grab;
+    }
+  }
+  &__title {
+    @include font('Futura Md BT', italic, 700, 48px, 48px, $white);
+    letter-spacing: 0.16em;
+  }
+  &__details {
+    display: flex;
+    padding-right: 50px;
+    margin: 43px 0 35px;
+    justify-content: space-between;
+    align-items: center;
+    & label{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__price {
+    @include font('Futura Hv BT', normal, 700, 36px, 0, $white);
+    letter-spacing: 0.16em;
+  }
+  &__details-right {
+    display: flex;
+    align-items: center;
+  }
+  &__shop {
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  &__size{
+    @include font('Futura Bk BT', normal, 400, 16px, 19px, $white);
+    margin-right: 20px;
+    &-select {
+    @include font('Futura Hv BT', normal, 400, 36px, 43px, $white);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    & option {
+      color: #000;
+      font-size: 25px;
+    }
+  }
+  }
+  &__btn {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 36px;
+    background: transparent;
+    font-family: "Futura Bk BT", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}

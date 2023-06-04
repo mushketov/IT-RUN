@@ -1,0 +1,38 @@
+.essence {
+  position: relative;
+  color: red;
+  padding: 300px 0 0; //фиксит баг с позиционированием линий
+  &__flash {
+    color: $white;
+    padding: 25px;
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+    width: calc(100% + 20px);
+    display: flex;
+    left: -10px;
+    &_red {
+      column-gap: 130px;
+      background: #ba0000;
+      transform: rotate(-1.91deg);
+    }
+    &_black {
+      column-gap: 300px;
+      background: #000000;
+      transform: rotate(2.92deg);
+    }
+  }
+  &__flash-text {
+    @include font('Futura XBlkCnIt BT', italic, 900, 32px, 1em, $white);
+    letter-spacing: 1em;
+  }
+  &__title{
+    @include font('Futura Md BT', normal, 400, 64px, 100px, $white);
+    text-align: center;
+    margin-bottom: 80px;
+    }
+  &__desc{
+    @include font('Futura Bk BT', normal, 400, 16px, 48px, $white);
+    text-align: center;
+  }
+}

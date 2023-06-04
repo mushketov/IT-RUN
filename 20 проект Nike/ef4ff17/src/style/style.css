@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Futura XBlkCnIt BT";
+  src: url("../fonts/FuturaBT-ExtraBlack.eot");
+  src: url("../fonts/FuturaBT-ExtraBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-ExtraBlack.woff2") format("woff2"), url("../fonts/FuturaBT-ExtraBlack.woff") format("woff"), url("../fonts/FuturaBT-ExtraBlack.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("../fonts/FuturaBT-Bold.eot");
+  src: url("../fonts/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Bold.woff2") format("woff2"), url("../fonts/FuturaBT-Bold.woff") format("woff"), url("../fonts/FuturaBT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("../fonts/FuturaBT-Medium.eot");
+  src: url("../fonts/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Medium.woff2") format("woff2"), url("../fonts/FuturaBT-Medium.woff") format("woff"), url("../fonts/FuturaBT-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Bk BT";
+  src: url("../fonts/FuturaBT-Book.eot");
+  src: url("../fonts/FuturaBT-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Book.woff2") format("woff2"), url("../fonts/FuturaBT-Book.woff") format("woff"), url("../fonts/FuturaBT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Hv BT";
+  src: url("../fonts/FuturaBT-Heavy.eot");
+  src: url("../fonts/FuturaBT-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Heavy.woff2") format("woff2"), url("../fonts/FuturaBT-Heavy.woff") format("woff"), url("../fonts/FuturaBT-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 40px 0 0;
+  z-index: 5;
+}
+.header .container {
+  max-width: 1800px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav img {
+  cursor: pointer;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  width: 25%;
+}
+.header__left img {
+  cursor: pointer;
+}
+.header__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  right: 0;
+  background: #ffffff;
+  bottom: -7px;
+  transition: 0.5s;
+}
+.header__link:hover::before {
+  left: 0;
+  width: 100%;
+}
+.header__right {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+  column-gap: 48px;
+}
+.header__right img {
+  width: 24px;
+  cursor: pointer;
+}
+
+/*мобильное вёрстка*/
+/*desktop вёрстка*/
+.home {
+  position: relative;
+  padding: 270px 0 555px;
+  background: black url("../images/home/bg.png") center/cover no-repeat;
+}
+.home__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../images/home/bg-text.png") left bottom/contain no-repeat;
+}
+.home__content::before {
+  content: "";
+  position: absolute;
+  background: url("../images/home/left-dots.svg") no-repeat;
+  left: 0;
+  width: 156px;
+  height: 491px;
+}
+.home__content::before circle {
+  color: aqua;
+  background: green;
+}
+.home__image {
+  position: relative;
+}
+.home__image::before {
+  content: "";
+  position: absolute;
+  background: url("../images/home/image-line360.svg") no-repeat;
+  bottom: -50px;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 560px;
+  height: 76px;
+  cursor: grab;
+}
+.home__title {
+  font-family: "Futura Md BT";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  letter-spacing: 0.16em;
+}
+.home__details {
+  display: flex;
+  padding-right: 50px;
+  margin: 43px 0 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+.home__details label {
+  display: flex;
+  align-items: center;
+}
+.home__price {
+  font-family: "Futura Hv BT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0;
+  color: #ffffff;
+  letter-spacing: 0.16em;
+}
+.home__details-right {
+  display: flex;
+  align-items: center;
+}
+.home__shop {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.home__size {
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.home__size-select {
+  font-family: "Futura Hv BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.home__size-select option {
+  color: #000;
+  font-size: 25px;
+}
+.home__btn {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 36px;
+  background: transparent;
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.essence {
+  position: relative;
+  color: red;
+  padding: 300px 0 0;
+}
+.essence__flash {
+  color: #ffffff;
+  padding: 25px;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  width: calc(100% + 20px);
+  display: flex;
+  left: -10px;
+}
+.essence__flash_red {
+  column-gap: 130px;
+  background: #ba0000;
+  transform: rotate(-1.91deg);
+}
+.essence__flash_black {
+  column-gap: 300px;
+  background: #000000;
+  transform: rotate(2.92deg);
+}
+.essence__flash-text {
+  font-family: "Futura XBlkCnIt BT";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1em;
+  color: #ffffff;
+  letter-spacing: 1em;
+}
+.essence__title {
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.essence__desc {
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

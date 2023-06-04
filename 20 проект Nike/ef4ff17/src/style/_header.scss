@@ -1,9 +1,13 @@
 .header {
+  .container{
+    max-width: 1800px;
+  }
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
-  padding: 33px 0;
+  padding: 40px 0 0;
+  z-index: 5;
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -14,7 +18,8 @@
   &__left {
     display: flex;
     align-items: center;
-    column-gap: 32px;
+    column-gap: 25px;
+    width: 25%;
     img{
       cursor: pointer;
     }
