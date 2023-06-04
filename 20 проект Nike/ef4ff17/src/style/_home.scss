@@ -36,7 +36,7 @@
     }
   }
   &__title {
-    @include font('Futura Md BT', italic, 700, 48px, 48px, $white);
+    @include font('Futura Md BT', italic, 700, 48px, 48px, white);
     letter-spacing: 0.16em;
   }
   &__details {
@@ -51,7 +51,7 @@
     }
   }
   &__price {
-    @include font('Futura Hv BT', normal, 700, 36px, 0, $white);
+    @include font('Futura Hv BT', normal, 700, 36px, 0, white);
     letter-spacing: 0.16em;
   }
   &__details-right {
@@ -63,16 +63,16 @@
     cursor: pointer;
   }
   &__size{
-    @include font('Futura Bk BT', normal, 400, 16px, 19px, $white);
+    @include font('Futura Bk BT', normal, 400, 16px, 19px, white);
     margin-right: 20px;
     &-select {
-    @include font('Futura Hv BT', normal, 400, 36px, 43px, $white);
+    @include font('Futura Hv BT', normal, 400, 36px, 43px, white);
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     & option {
-      color: #000;
+      color: black;
       font-size: 25px;
     }
   }
@@ -82,11 +82,11 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-    border: 2px solid #ffffff;
+    border: 2px solid white;
     border-radius: 36px;
     background: transparent;
     font-family: "Futura Bk BT", sans-serif;
     font-size: 16px;
-    color: #ffffff;
+    color: white;
   }
 }

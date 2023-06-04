@@ -108,19 +108,23 @@ body {
   cursor: pointer;
 }
 .header__link {
-  position: relative;
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  color: white;
+  position: relative;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 }
 .header__link::before {
   content: "";
   position: absolute;
   height: 3px;
-  width: 0%;
+  width: 0;
   right: 0;
-  background: #ffffff;
+  background: white;
   bottom: -7px;
   transition: 0.5s;
 }
@@ -184,7 +188,7 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
-  color: #ffffff;
+  color: white;
   letter-spacing: 0.16em;
 }
 .home__details {
@@ -204,7 +208,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 0;
-  color: #ffffff;
+  color: white;
   letter-spacing: 0.16em;
 }
 .home__details-right {
@@ -221,7 +225,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: white;
   margin-right: 20px;
 }
 .home__size-select {
@@ -230,14 +234,14 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 43px;
-  color: #ffffff;
+  color: white;
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
 }
 .home__size-select option {
-  color: #000;
+  color: black;
   font-size: 25px;
 }
 .home__btn {
@@ -245,12 +249,12 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
   border-radius: 36px;
   background: transparent;
   font-family: "Futura Bk BT", sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: white;
 }
 
 .essence {
@@ -259,7 +263,7 @@ body {
   padding: 300px 0 0;
 }
 .essence__flash {
-  color: #ffffff;
+  color: white;
   padding: 25px;
   overflow: hidden;
   top: 0;
@@ -275,7 +279,7 @@ body {
 }
 .essence__flash_black {
   column-gap: 300px;
-  background: #000000;
+  background: black;
   transform: rotate(2.92deg);
 }
 .essence__flash-text {
@@ -284,7 +288,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 1em;
-  color: #ffffff;
+  color: white;
   letter-spacing: 1em;
 }
 .essence__title {
@@ -293,7 +297,7 @@ body {
   font-weight: 400;
   font-size: 64px;
   line-height: 100px;
-  color: #ffffff;
+  color: white;
   text-align: center;
   margin-bottom: 80px;
 }
@@ -303,7 +307,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 48px;
-  color: #ffffff;
+  color: white;
   text-align: center;
 }
 
