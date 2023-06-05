@@ -96,6 +96,15 @@ body {
   color: white;
   color: white;
 }
+.btn:after {
+  content: "";
+  position: relative;
+  background: url("../images/global/btn-arrow.svg");
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 0;
+}
 
 .header {
   position: absolute;
