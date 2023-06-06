@@ -188,32 +188,34 @@
         },
         loop: true,
         autoplay: {
-          delay: 1000,
+          delay: 3000,
           disableOnInteraction: false,
         },
       });
-    </script>
-    <script>
       let swiperRed = new Swiper(".mySwiperRed", {
-        slidesPerView: 4,
         loop: true,
-        spaceBetween: 30,
-        autoplay: {
-          reverseDirection: true,
-          delay: 600,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
-    <script>
-      let swiperBlack = new Swiper(".mySwiperBlack", {
+        freeMode: false,
+        grabCursor: false,
         slidesPerView: 3,
-        loop: true,
-        spaceBetween: 30,
         autoplay: {
-          delay: 600,
+          delay: 1,
+          reverseDirection: true,
           disableOnInteraction: false,
         },
+        speed: 2000,
+        freeModeMomentum: false,
+      });
+      let swiperBlack = new Swiper(".mySwiperBlack", {
+        loop: true,
+        freeMode: false,
+        grabCursor: false,
+        slidesPerView: 3,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        speed: 2000,
+        freeModeMomentum: false,
       });
     </script>
   </body>
