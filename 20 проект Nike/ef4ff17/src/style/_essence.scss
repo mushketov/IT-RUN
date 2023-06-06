@@ -7,6 +7,7 @@
   text-align: center;
   padding: 300px 0 115px; //фиксит баг с позиционированием линий
   &__flash {
+    z-index: 10;
     color: white;
     padding: 25px;
     overflow: hidden;
@@ -15,26 +16,31 @@
     width: calc(100% + 20px);
     display: flex;
     left: -10px;
+
     &_red {
       column-gap: 130px;
       background: #ba0000;
       transform: rotate(-1.91deg);
     }
+
     &_black {
       column-gap: 300px;
       background: black;
       transform: rotate(2.92deg);
     }
   }
+
   &__flash-text {
     @include font('Futura XBlkCnIt BT', italic, 900, 32px, 1em, white);
     letter-spacing: 1em;
   }
-  &__title{
+
+  &__title {
     position: relative;
     @include font('Futura Md BT', normal, 400, 64px, 100px, white);
     max-width: 570px;
-    &:before{
+
+    &:before {
       content: '';
       position: absolute;
       width: 287px;
@@ -45,12 +51,14 @@
       top: 98px;
       right: 14px;
     }
-    }
-  &__desc{
+  }
+
+  &__desc {
     @include font('Futura Bk BT', normal, 400, 16px, 48px, white);
     max-width: 1064px;
   }
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     background: url("../images/essence/red-sneaker.png") no-repeat;
@@ -61,3 +69,7 @@
     z-index: -1;
   }
 }
+
+//.mySwiper {
+//  overflow: unset !important;
+//}

@@ -1,21 +1,20 @@
 .home {
   position: relative;
-  padding: 270px 0 555px;
+  padding: 305px 0 300px;
   background: black url("../images/home/bg.png") center/cover no-repeat;
   &__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url("../images/home/bg-text.png") left bottom/contain
-      no-repeat;
+    background: url("../images/home/bg-text.png") left bottom/contain no-repeat;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
-      background: url('../images/home/left-dots.svg') no-repeat;
+      background: url("../images/home/left-dots.svg") no-repeat;
       left: 0;
       width: 156px;
       height: 491px;
-      & circle{
+      & circle {
         color: aqua;
         background: green;
       }
@@ -36,7 +35,7 @@
     }
   }
   &__title {
-    @include font('Futura Md BT', italic, 700, 48px, 48px, white);
+    @include font("Futura Md BT", italic, 700, 48px, 48px, white);
     letter-spacing: 0.16em;
   }
   &__details {
@@ -45,13 +44,13 @@
     margin: 43px 0 35px;
     justify-content: space-between;
     align-items: center;
-    & label{
+    & label {
       display: flex;
       align-items: center;
     }
   }
   &__price {
-    @include font('Futura Hv BT', normal, 700, 36px, 0, white);
+    @include font("Futura Hv BT", normal, 700, 36px, 0, white);
     letter-spacing: 0.16em;
   }
   &__details-right {
@@ -62,19 +61,76 @@
     margin-left: 50px;
     cursor: pointer;
   }
-  &__size{
-    @include font('Futura Bk BT', normal, 400, 16px, 19px, white);
+  &__size {
+    @include font("Futura Bk BT", normal, 400, 16px, 19px, white);
     margin-right: 20px;
     &-select {
-    @include font('Futura Hv BT', normal, 400, 36px, 43px, white);
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    & option {
-      color: black;
-      font-size: 25px;
+      @include font("Futura Hv BT", normal, 400, 36px, 43px, white);
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      & option {
+        color: black;
+        font-size: 25px;
+      }
     }
   }
+  &__bottom {
+    position: relative;
+    top: 303px;
+    display: flex;
+  }
+  &__row {
+    align-items: center;
+    display: flex;
+    column-gap: 110px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  &__arrows {
+    display: flex;
+    column-gap: 44px;
+    @include font("Futura Bk BT", normal, 400, 16px, 16px, white);
+  }
+  &__prev {
+    cursor: pointer;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 15px;
+      left: -20px;
+      background: url("../images/home/prev.svg");
+    }
+  }
+  &__next {
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 15px;
+      right: -20px;
+      background: url("../images/home/next.svg");
+    }
+  }
+  &__row-item {
+    cursor: pointer;
+    border: white solid 2px;
+    padding: 155px 32px 0px;
+    position: relative;
+    width: 320px;
+    height: 195px;
+    img {
+      position: absolute;
+      bottom: 55px;
+    }
+  }
+  &__row-title {
+    @include font("Futura LtCn BT", normal, 400, 24px, 0, white);
+    text-transform: uppercase;
   }
 }

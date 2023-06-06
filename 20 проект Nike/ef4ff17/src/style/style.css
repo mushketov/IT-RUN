@@ -39,6 +39,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Futura LtCn BT";
+  src: url("../fonts/FuturaBT-LightCondensed.eot");
+  src: url("../fonts/FuturaBT-LightCondensed.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-LightCondensed.woff2") format("woff2"), url("../fonts/FuturaBT-LightCondensed.woff") format("woff"), url("../fonts/FuturaBT-LightCondensed.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -173,7 +181,7 @@ body {
 /*desktop вёрстка*/
 .home {
   position: relative;
-  padding: 270px 0 555px;
+  padding: 305px 0 300px;
   background: black url("../images/home/bg.png") center/cover no-repeat;
 }
 .home__content {
@@ -270,6 +278,73 @@ body {
   color: black;
   font-size: 25px;
 }
+.home__bottom {
+  position: relative;
+  top: 303px;
+  display: flex;
+}
+.home__row {
+  align-items: center;
+  display: flex;
+  column-gap: 110px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.home__arrows {
+  display: flex;
+  column-gap: 44px;
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+.home__prev {
+  cursor: pointer;
+  position: relative;
+}
+.home__prev:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  left: -20px;
+  background: url("../images/home/prev.svg");
+}
+.home__next {
+  cursor: pointer;
+  position: relative;
+}
+.home__next:after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  right: -20px;
+  background: url("../images/home/next.svg");
+}
+.home__row-item {
+  cursor: pointer;
+  border: white solid 2px;
+  padding: 155px 32px 0px;
+  position: relative;
+  width: 320px;
+  height: 195px;
+}
+.home__row-item img {
+  position: absolute;
+  bottom: 55px;
+}
+.home__row-title {
+  font-family: "Futura LtCn BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0;
+  color: white;
+  text-transform: uppercase;
+}
 
 .essence {
   display: flex;
@@ -283,6 +358,7 @@ body {
   padding: 300px 0 115px;
 }
 .essence__flash {
+  z-index: 10;
   color: white;
   padding: 25px;
   overflow: hidden;
