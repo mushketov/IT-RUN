@@ -369,12 +369,10 @@ body {
   left: -10px;
 }
 .essence__flash_red {
-  column-gap: 130px;
   background: #ba0000;
   transform: rotate(-1.91deg);
 }
 .essence__flash_black {
-  column-gap: 300px;
   background: black;
   transform: rotate(2.92deg);
 }
@@ -402,7 +400,7 @@ body {
   position: absolute;
   width: 287px;
   height: 55px;
-  background: #BA0000;
+  background: #ba0000;
   mix-blend-mode: multiply;
   transform: rotate(11.2deg);
   top: 98px;

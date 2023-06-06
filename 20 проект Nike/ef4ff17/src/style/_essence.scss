@@ -16,50 +16,43 @@
     width: calc(100% + 20px);
     display: flex;
     left: -10px;
-
     &_red {
-      column-gap: 130px;
+      //column-gap: 130px;
       background: #ba0000;
       transform: rotate(-1.91deg);
     }
-
     &_black {
-      column-gap: 300px;
+      //column-gap: 300px;
       background: black;
       transform: rotate(2.92deg);
     }
   }
-
   &__flash-text {
-    @include font('Futura XBlkCnIt BT', italic, 900, 32px, 1em, white);
+    @include font("Futura XBlkCnIt BT", italic, 900, 32px, 1em, white);
     letter-spacing: 1em;
   }
-
   &__title {
     position: relative;
-    @include font('Futura Md BT', normal, 400, 64px, 100px, white);
+    @include font("Futura Md BT", normal, 400, 64px, 100px, white);
     max-width: 570px;
-
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 287px;
       height: 55px;
-      background: #BA0000;
+      background: #ba0000;
       mix-blend-mode: multiply;
       transform: rotate(11.2deg);
       top: 98px;
       right: 14px;
     }
   }
-
   &__desc {
-    @include font('Futura Bk BT', normal, 400, 16px, 48px, white);
+    @include font("Futura Bk BT", normal, 400, 16px, 48px, white);
     max-width: 1064px;
   }
-
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     background: url("../images/essence/red-sneaker.png") no-repeat;
     bottom: -215px;
@@ -69,7 +62,3 @@
     z-index: -1;
   }
 }
-
-//.mySwiper {
-//  overflow: unset !important;
-//}

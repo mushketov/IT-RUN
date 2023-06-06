@@ -114,17 +114,49 @@
         </div>
       </section>
       <section class="essence">
-        <div class="essence__flash essence__flash_red">
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
+        <div class="swiperRed mySwiperRed essence__flash essence__flash_red">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+          </div>
         </div>
-        <div class="essence__flash essence__flash_black">
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
-          <span class="essence__flash-text">FLASH</span>
+        <div class="swiperBlack mySwiperBlack essence__flash essence__flash_black">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+            <div class="swiper-slide">
+              <span class="essence__flash-text">FLASH</span>
+            </div>
+          </div>
         </div>
         <div class="container">
           <h2 class="essence__title">
@@ -157,6 +189,29 @@
         loop: true,
         autoplay: {
           delay: 1000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+      let swiperRed = new Swiper(".mySwiperRed", {
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          reverseDirection: true,
+          delay: 600,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+      let swiperBlack = new Swiper(".mySwiperBlack", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 600,
           disableOnInteraction: false,
         },
       });
