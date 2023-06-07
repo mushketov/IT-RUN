@@ -432,4 +432,53 @@ body {
   transition-timing-function: linear !important;
 }
 
+.sellers {
+  display: flex;
+  text-align: center;
+  padding: 115px 0 96px;
+}
+.sellers__title {
+  position: relative;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: white;
+  margin-bottom: 107px;
+}
+.sellers__title:after {
+  content: "";
+  position: absolute;
+  width: 275px;
+  height: 60px;
+  background: #BA0000;
+  mix-blend-mode: multiply;
+  transform: rotate(11.2deg);
+  right: 370px;
+  top: -5px;
+}
+.sellers__row {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sellers__card {
+  position: relative;
+}
+.sellers__card-text {
+  font-family: "Futura Md BT";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  right: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */

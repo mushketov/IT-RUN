@@ -1,0 +1,38 @@
+.sellers{
+  display: flex;
+  text-align: center;
+  padding: 115px 0 96px;
+  &__title{
+    position: relative;
+    @include font("Futura Md BT", normal, 400, 64px, 64px, white);
+    margin-bottom: 107px;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 275px;
+      height: 60px;
+      background: #BA0000;
+      mix-blend-mode: multiply;
+      transform: rotate(11.2deg);
+      right: 370px;
+      top: -5px;
+    }
+  }
+  &__row{
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card{
+    position: relative;
+  }
+  &__card-text{
+    @include font("Futura Md BT", italic, 700, 64px, 64px, white);
+    position: absolute;
+    bottom: 10px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    right: 15px;
+  }
+}
