@@ -1,0 +1,69 @@
+.sports {
+  padding: 97px 0 90px;
+  text-align: center;
+  &__title {
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 170px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 237px;
+      height: 196px;
+      z-index: 1;
+      right: 700px;
+      top: -40px;
+      mix-blend-mode: multiply;
+      background: url("../images/sports/title-dots.png") center/cover no-repeat;
+    }
+    span {
+      @include font("Futura XBlkCnIt BT", italic, 900, 96px, 115px, white);
+      display: inline-block;
+      transform: rotate(-10.67deg);
+      &:last-child {
+        position: relative;
+        top: 30px;
+        right: 66px;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+      }
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 90px;
+    justify-items: center;
+    margin-bottom: 90px;
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 224px;
+    img {
+      bottom: 90px;
+      position: absolute;
+    }
+    &-name {
+      margin-top: 155px;
+      @include font("Futura LtCn BT", normal, 400, 24px, 29px, white);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 95px;
+      z-index: -1;
+      background: url("../images/sports/descbg.png");
+      width: 400px;
+      height: 61px;
+    }
+    &:nth-child(3) {
+      grid-column: 2;
+    }
+  }
+}
