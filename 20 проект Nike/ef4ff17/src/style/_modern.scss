@@ -1,0 +1,25 @@
+.modern{
+  &__content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__image-preview{
+    width: 70%;
+    img{
+      width: 150%;
+      position: relative;
+      left: -300px;
+    }
+  }
+  &__right{
+    &-title{
+      margin-bottom: 40px;
+      @include font('Futura Md BT', normal, 400, 64px, 77px, white);
+    }
+    &-desc{
+      margin-bottom: 40px;
+      @include font('Futura Bk BT', normal, 400, 24px, 29px, white);
+    }
+  }
+}

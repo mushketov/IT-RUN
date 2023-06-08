@@ -541,7 +541,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 224px;
+  height: 220px;
 }
 .sports__card img {
   bottom: 90px;
@@ -567,6 +567,38 @@ body {
 }
 .sports__card:nth-child(3) {
   grid-column: 2;
+}
+
+.modern__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modern__image-preview {
+  width: 70%;
+}
+.modern__image-preview img {
+  width: 150%;
+  position: relative;
+  left: -300px;
+}
+.modern__right-title {
+  margin-bottom: 40px;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: white;
+}
+.modern__right-desc {
+  margin-bottom: 40px;
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
