@@ -55,6 +55,14 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Futura Lt BT";
+  src: url("../fonts/FuturaBT-Light.eot");
+  src: url("../fonts/FuturaBT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Light.woff2") format("woff2"), url("../fonts/FuturaBT-Light.woff") format("woff"), url("../fonts/FuturaBT-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -599,6 +607,73 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: white;
+}
+
+.favorite {
+  position: relative;
+}
+.favorite .container {
+  max-width: 1900px;
+  padding: 0 0 0 300px;
+}
+.favorite__title {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: white;
+}
+.favorite__title span {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Futura Lt BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #ba0000;
+}
+.favorite__title span:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 32px;
+  bottom: -20px;
+  background: url("../images/favorite/title-decor.png");
+}
+.favorite__row {
+  display: flex;
+  justify-content: flex-end;
+}
+.favorite__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.favorite__card:before {
+  content: url("../images/favorite/card-bg.png");
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: -160px;
+  top: -180px;
+  z-index: -1;
+}
+.favorite:before {
+  content: "FIX IT";
+  color: red;
+  font-size: 164px;
+  left: 45%;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
