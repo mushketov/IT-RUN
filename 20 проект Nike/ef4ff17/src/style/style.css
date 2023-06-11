@@ -63,6 +63,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Futura LT";
+  src: url("../fonts/FuturaLT-Bold.eot");
+  src: url("../fonts/FuturaLT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaLT-Bold.woff2") format("woff2"), url("../fonts/FuturaLT-Bold.woff") format("woff"), url("../fonts/FuturaLT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -611,6 +619,7 @@ body {
 
 .favorite {
   position: relative;
+  padding-bottom: 200px;
 }
 .favorite .container {
   max-width: 1900px;
@@ -674,6 +683,41 @@ body {
   top: 50%;
   position: absolute;
   z-index: 2;
+}
+
+.footer-middle {
+  padding: 72px 0 55px;
+  display: flex;
+}
+.footer-middle__column {
+  width: 50%;
+}
+.footer-middle__column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-middle__column img {
+  width: 247px;
+}
+.footer-middle__form {
+  margin-bottom: 88px;
+  width: 400px;
+  border: 1px solid #ffffff;
+  border-radius: 80px;
+  padding: 18px 50px;
+}
+.footer-middle__form-input > label {
+  background: transparent;
+}
+.footer-middle__form-title {
+  font-family: "Futura LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 64px;
+  color: white;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

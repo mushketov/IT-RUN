@@ -1,0 +1,33 @@
+.footer {
+  &-middle {
+    padding: 72px 0 55px;
+    display: flex;
+    &__column {
+      width: 50%;
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      img {
+        width: 247px;
+      }
+    }
+    &__form {
+      margin-bottom: 88px;
+      width: 400px;
+      border: 1px solid #ffffff;
+      border-radius: 80px;
+      padding: 18px 50px;
+      &-input{
+        & > label{
+          background: transparent;
+        }
+      }
+      &-title {
+        @include font("Futura LT", normal, 400, 52px, 64px, white);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
